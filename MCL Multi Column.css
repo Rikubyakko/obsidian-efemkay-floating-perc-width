@@ -165,31 +165,32 @@ settings:
 		collapsed: false
     -
         id: float-small-width
-        title: Floating Callout Width - Small (in px)
-        type: variable-number-slider
-        default: 300
-        min: 200
-        max: 450
-        step: 50
-		format: px
+		title: Floating Callout Width - Small (%)
+		type: variable-number-slider
+		default: 30
+		min: 0
+		max: 100
+		step: 1
+		format: "%"
+
     -
         id: float-medium-width
         title: Floating Callout Width - Medium (in px)
-        type: variable-number-slider
-        default: 400
-        min: 300
-        max: 550
-        step: 50
-		format: px
+		type: variable-number-slider
+		default: 40
+		min: 0
+		max: 100
+		step: 1
+		format: "%"
     -
         id: float-large-width
         title: Floating Callout Width - Large (in px)
-        type: variable-number-slider
-        default: 600
-        min: 500
-        max: 750
-        step: 50
-		format: px
+		type: variable-number-slider
+		default: 50
+		min: 0
+		max: 100
+		step: 1
+		format: "%"
 
 	-
         id: float-gap-title
@@ -469,9 +470,9 @@ body{
 
 	/* variables */
 	body {
-		--float-small-width: 300px;
-		--float-medium-width: 400px;
-		--float-large-width: 600px;
+		--float-small-width: 50%;
+		--float-medium-width: 60%;
+		--float-large-width: 80%;
 
 		--float-left-callout-margin: 0 15px 0 0;
 		--float-right-callout-margin: 0 0 0 15px;
